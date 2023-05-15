@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
 	content: ['./dist/**/*.{html,js}'],
 	theme: {
@@ -11,8 +13,11 @@ module.exports = {
 				darkBlue: 'hsl(223, 47%, 23%)'
 			},
 			backgroundImage: {
-				desktop: "url('./assets/pattern-background-desktop.svg')",
-				mobile: "url('./assets/pattern-background-mobile.svg')"
+				desktop: 'url(./assets/pattern-background-desktop.svg)',
+				mobile: 'url(./assets/pattern-background-mobile.svg)'
+			},
+			fontFamily: {
+				RedHatDisplay: ['Red Hat Display', ...defaultTheme.fontFamily.sans]
 			}
 		}
 	},

@@ -9,14 +9,13 @@
 	</head>
 	<body>
 		<main
-			class="font-['Red_Hat_Display'] w-full h-screen grid sm:place-items-center justify-items-center bg-paleBlue sm:bg-desktop bg-mobile bg-no-repeat bg-top text-center"
+			class="font-RedHatDisplay w-full h-screen grid sm:place-items-center justify-items-center bg-paleBlue sm:bg-desktop bg-mobile bg-no-repeat bg-top text-center"
 		>
-			<div
+			<h1 class="fixed scale-0">Order</h1>
+			<article
 				class="bg-white sm:mt-0 mt-[70px] sm:w-[450px] w-[325px] sm:h-[700px] h-[570px] rounded-2xl overflow-hidden"
 			>
-				<div>
-					<img src="./assets/illustration-hero.svg" alt="hero" />
-				</div>
+				<img src="./assets/illustration-hero.svg" alt="hero" />
 				<div class="sm:py-11 py-8 sm:px-12 px-6 flex flex-col">
 					<h2
 						class="sm:text-[28px] text-[22px] font-extrabold text-darkBlue mb-4"
@@ -33,11 +32,13 @@
 						class="flex items-center w-full bg-veryPaleBlue rounded-xl sm:p-6 p-4 sm:mb-8 mb-6"
 					>
 						<img src="./assets/icon-music.svg" alt="music" />
-						<div class="ml-5">
-							<p class="font-extrabold sm:text-base text-[14px]">Annual Plan</p>
-							<p class="text-desaturatedBlue sm:text-[17px] text-[14px]">
+						<div class="flex flex-col ml-5">
+							<span class="font-extrabold sm:text-base text-[14px]">
+								Annual Plan
+							</span>
+							<span class="text-desaturatedBlue sm:text-[17px] text-[14px]">
 								$59.99/year
-							</p>
+							</span>
 						</div>
 						<button
 							class="ml-auto text-brightBlue sm:text-[15px] text-[14px] font-bold tracking-tighter hover:text-brightBlue/80 transition underline hover:no-underline"
@@ -46,17 +47,17 @@
 						</button>
 					</div>
 					<button
-						class="py-3 bg-brightBlue rounded-xl text-white font-bold text-[15px] drop-shadow-2xl sm:mb-8 mb-6 hover:bg-brightBlue/80 transition"
+						class="py-[15px] bg-brightBlue rounded-xl text-white font-bold text-[15px] drop-shadow-2xl sm:mb-8 mb-5 hover:bg-brightBlue/80 transition"
 					>
 						Proceed to Payment
 					</button>
 					<button
-						class="font-bold text-desaturatedBlue hover:text-darkBlue transition"
+						class="font-bold text-[15px] text-desaturatedBlue hover:text-darkBlue transition"
 					>
 						Cancel Order
 					</button>
 				</div>
-			</div>
+			</article>
 		</main>
 	</body>
 </html>
